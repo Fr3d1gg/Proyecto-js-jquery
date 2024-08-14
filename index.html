@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CDN PLUGIN JQUERY SLIDER-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+    <!--Estilos css-->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Proyecto con Js</title>
   </head>
@@ -21,7 +26,11 @@
         </nav>
       </header>
       <!--slider-->
-      <div id="slider"></div>
+      <div id="slider">
+        <div><img src="/img/hojas.jpg" alt="imagen1" title="leaves"></div>
+        <div><img src="img/rojo.jpg" alt="imagen2" title="red"></div>
+        <div><img src="img/cielo.jpg" alt="imagen3" srcset="" title="clouds"></div>
+      </div>
       <!--SECCION-->
       <section id="content">
         <div id="posts">
@@ -91,5 +100,6 @@
     <footer>CURSO DE JS &copy;
 
     </footer>
+    <script src="/Js/main.js"></script>
   </body>
 </html>
