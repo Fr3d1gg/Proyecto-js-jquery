@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    //SLIDER
     $("#slider").bxSlider({
         mode:'fade',
         captions:true,
@@ -8,4 +9,28 @@ $(document).ready(function(){
     }
         
     );
+    //POST
+    //objetos json
+  
+    let post=[{title:"Prueba de JS 1",date: ' Publicado el dia '+moment().format("D")+' de '+moment().format("MMMM")+' del '+moment().format("YYYY"),content:'loremipsum insolorm'}
+        ,{title:"Prueba de Jquery 2",date: ' Publicado el dia '+moment().format("D")+' de '+moment().format("MMMM")+' del '+moment().format("YYYY"),content:'loremipsum insolorm nonmadte'}
+        ,{title:"Prueba 3",date: ' Publicado el dia '+moment().format("D")+' de '+moment().format("MMMM")+' del '+moment().format("YYYY"),content:'loremipsum insolorm hgagsfdtdgfysgadga a'},
+        {title:"Prueba4",date: ' Publicado el dia '+moment().format("D")+' de '+moment().format("MMMM")+' del '+moment().format("YYYY"),content:'loremipsum insolorm'}]
+        console.log(post);
+
+
+        post.forEach((item)=>{
+                let post=`
+            <article class="post">
+            <h2>${item.title}</h2>
+            <span class="date">Fecha de publicacion ${item.date}</span>
+            <p>
+             ${item.content}
+            </p>
+                 <a href="#" class="button-more">Leer mas</a>
+                `;
+                console.log(post);
+                $("#posts").append(post);
+        });
+        
   });
