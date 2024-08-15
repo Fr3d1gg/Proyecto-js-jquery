@@ -7,10 +7,7 @@
     float: none;
     clear: both;
 }
-body{
-    background: url('/img/hojas.jpg');
-    background-attachment: fixed;
-}
+
 #global{
     width: 65%;
     margin: 0px auto;
@@ -24,7 +21,6 @@ body{
     font-size: 25px;
     letter-spacing: 4px;
     line-height: 75px;
-    background: #235e3d;
     color: #fff;
     text-align: center;
     margin-bottom: 20px;
@@ -47,9 +43,7 @@ body{
     display: inline-block;
     transition: all 400ms;
 }
-#menu li:hover{
-    background: #235e3d;
-}
+
 #menu a{
     display: block;
     color: #fff;
@@ -90,7 +84,7 @@ body{
     text-decoration: none;
     color: white;
     margin-top: 10px;
-    background: #235e3d;
+
 }
 #asidebar{
     font-family: Arial, Helvetica, sans-serif;
@@ -148,4 +142,41 @@ footer{
 
 .bx-wrapper,.bx-viewport{
     height: 250px!important;
+}
+
+#selector-theme{
+    position: fixed;
+    top: 40%;
+    background: rgba(51,51,51,0.5);
+    width: 50px;
+    height: 100px;
+}
+#green,#red,#blue{
+    width: 25px;
+    height: 25px;
+    border:1px solid #fff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition:all 2000ms;
+}
+#green{
+    background: #235e3d;
+}
+#green:hover{
+   scale:1.2 ;
+}
+#red{
+    background: #CA3413;
+}
+#red:hover{
+    scale: 1.2;
+}
+#blue{
+    background: #1f87c4;
+}
+#blue:hover{
+  scale: 1.2;
 }
