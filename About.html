@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Estilos css-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/green.css" id="theme">
+    <title>Proyecto con Js</title>
+  </head>
+  <body>
+    <div id="selector-theme">
+      <div id="green"></div>
+      <div id="blue"></div>
+      <div id="red"></div>
+    </div>
+    <section id="global">
+      <header>
+        <div id="logo"><h1>PROYECTO JS</h1></div>
+        <div class="clearfix"></div>
+        <nav id="menu">
+          <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">RELOJ</a></li>
+            <li><a href="#">SOBRE MI</a></li>
+            <li><a href="#">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!--SECCION-->
+      <!--Acordeon que vamos a cargar-->
+      <section id="content">
+        <div id="box">
+          
+        </div>
+        <asidebar id="asidebar"
+          ><div id="about">
+            <h4><span>¿Quien soy?</span></h4>
+            <img src="/img/caracol.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
+              beatae commodi quaerat numquam, qui aliquid esse necessitatibus
+              mollitia sed totam laborum est! Dolores quasi veniam vitae ipsa
+              culpa tenetur natus.
+            </p>
+          </div>
+          <div id="login">
+            <h4><span>Identificate</span></h4>
+            <form >
+              <label for="name">
+                Nombre
+              </label>
+              <input type="text" name="name" id="form-name"><br>
+              <label for="email">
+                Email
+              </label><br>
+              <input type="email" name="email" id="form-email"><br>
+              <label for="password">
+                Password
+              </label>
+              <input type="password" name="password" id="form-pass"><br>
+
+              <input type="submit">
+            </form>
+          </div>
+          </asidebar>
+        <div class="clearfix"></div>
+      </section>
+    </section>
+    <footer>CURSO DE JS &copy;
+      <a href="#" class="subir">Ir al inicio</a>
+      
+    </footer>
+    <script src="/Js/main.js"></script>
+  </body>
+</html>
