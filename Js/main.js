@@ -55,7 +55,7 @@ $(document).ready(function () {
       content: "loremipsum insolorm",
     },
   ];
-  console.log(post);
+  
 
   post.forEach((item) => {
     let post = `
@@ -67,7 +67,7 @@ $(document).ready(function () {
             </p>
             <a href="#" class="button-more">Leer mas</a>
                 `;
-    console.log(post);
+    
     $("#posts").append(post);
   });
   //Cambiar colores de nuestra pagina web
@@ -81,4 +81,39 @@ $(document).ready(function () {
   $("#blue").click(function () {
     theme.attr("href", "css/blue.css");
   });
+  //Scrolll hasta arriba de la web
+  $(".subir").click(function(e){
+    e.preventDefault();
+    $('html,body').animate({
+      scrollTop:0
+    },4000)
+    return false;
+  })
+
+
+  //formulario login falso con localStorage
+  $("#login form").submit(function(){
+   let form_name=$("#form-name").val();
+   let form_email=$("#form-email").val();
+   let form_pass=$("#form-pass").val();
+   localStorage.setItem("fomr-name",form_name);
+   localStorage.setItem("form-email",form_email);
+   localStorage.setItem("fomr-pass",form_pass);
+   
+  });
+  
+  let form_name=localStorage.getItem("fomr-name");
+  if(form_name!=null&&form_name!=undefined){
+    $("#about p").html("Bienvenido, "+form_name);
+    $("#about p").append("<a href='#' id='logout'>   logout</a>");
+    $("#login").hide();
+    $("#logout").click(function(){
+      localStorage.clear();
+      location.reload();
+     
+
+    });
+  }
+  
+  
 });

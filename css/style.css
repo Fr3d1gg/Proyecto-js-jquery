@@ -180,3 +180,9 @@ footer{
 #blue:hover{
   scale: 1.2;
 }
+.subir{
+    color: white;
+    display: block;
+    text-decoration: none;
+    float: right;    
+}
