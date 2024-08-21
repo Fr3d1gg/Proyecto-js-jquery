@@ -96,17 +96,18 @@ $(document).ready(function () {
    let form_name=$("#form-name").val();
    let form_email=$("#form-email").val();
    let form_pass=$("#form-pass").val();
-   localStorage.setItem("fomr-name",form_name);
+   localStorage.setItem("form-name",form_name);
    localStorage.setItem("form-email",form_email);
-   localStorage.setItem("fomr-pass",form_pass);
+   localStorage.setItem("form-pass",form_pass);
    
   });
   
-  let form_name=localStorage.getItem("fomr-name");
+  let form_name=localStorage.getItem("form-name");
   if(form_name!=null&&form_name!=undefined){
     $("#about p").html("Bienvenido, "+form_name);
     $("#about p").append("<a href='#' id='logout'>   logout</a>");
     $("#login").hide();
+
     $("#logout").click(function(){
       localStorage.clear();
       location.reload();
