@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Importando CDN de Jquery UI-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <!--Jquery CDN-->
+   <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
 
-    <!-- jQuery UI CSS -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    
-    <!-- jQuery UI JS -->
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <!--MomentJs-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
+
     <!--Estilos css-->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/green.css" id="theme" />
@@ -29,8 +31,8 @@
         <nav id="menu">
           <ul>
             <li><a href="index.html">INICIO</a></li>
-            <li><a href="clock.html">RELOJ</a></li>
-            <li><a href="#">SOBRE MI</a></li>
+            <li><a href="#">RELOJ</a></li>
+            <li><a href="About.html">SOBRE MI</a></li>
             <li><a href="#">CONTACTO</a></li>
           </ul>
         </nav>
@@ -38,42 +40,11 @@
       <!--SECCION-->
       <!--Acordeon que vamos a cargar-->
       <section id="content">
-        
-        <div id="box">
-          <!--ACORDEON-->
-          <h2 class="acord">About me</h2>
-          <div id="acordeon">
-            
-            <h3>¿Quienes somos?</h3>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A iusto
-                suscipit odit non molestiae sapiente dolor explicabo cum doloribus
-                beatae, quasi optio harum, totam deserunt commodi? Saepe
-                voluptatem repellendus distinctio!
-              </p>
-            </div>
-            <h3>mesa de trabajo</h3>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A iusto
-                suscipit odit non molestiae sapiente dolor explicabo cum doloribus
-                beatae, quasi optio harum, totam deserunt commodi? Saepe
-                voluptatem repellendus distinctio!
-              </p>
-            </div>
-            <h3>continuidad y resultados</h3>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A iusto
-                suscipit odit non molestiae sapiente dolor explicabo cum doloribus
-                beatae, quasi optio harum, totam deserunt commodi? Saepe
-                voluptatem repellendus distinctio!
-              </p>
-            </div>
-            
-            
-          </div>
+
+        <div id="box-to-clock">
+            <!--Cragar el reloj-->
+            <div id="clock"></div>
+        </div>
         </div>
         <asidebar id="asidebar"
           ><div id="about">
@@ -107,6 +78,6 @@
       CURSO DE JS &copy;
       <a href="#" class="subir">Ir al inicio</a>
     </footer>
-    <script src="/Js/section-about.js"></script>
+    <script src="/Js/clock.js"></script>
   </body>
 </html>
