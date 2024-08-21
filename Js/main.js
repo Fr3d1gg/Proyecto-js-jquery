@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
   //SLIDER
   $("#slider").bxSlider({
     mode: "fade",
