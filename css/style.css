@@ -222,10 +222,9 @@ footer{
     margin-top: 10px;
 }
 .form-error{
-    float: right;
     font-size: 11px;
     background: red;
     color: white;
     padding: 10px;
-    width: 65%;
+    width: 100%;
 }

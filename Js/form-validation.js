@@ -7,7 +7,9 @@ $(document).ready(function(){
    
     // Inicializar la validación del formulario
     $.validate({
-        lang:'es'
+        lang:'es',
+        errorMessagePosition:'top',
+        scrollToTopOnEroor:true
     });
 
 });
